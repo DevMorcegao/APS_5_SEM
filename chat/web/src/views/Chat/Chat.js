@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 import uuid from 'uuid/v4';
-import { PictureOutlined } from '@ant-design/icons';
 
 const myId = uuid();
 const socket = io('http://localhost:8080');
