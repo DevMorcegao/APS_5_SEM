@@ -1,0 +1,28 @@
+{
+  "name": "backend-chat",
+  "version": "1.0.0",
+  "description": "Back-end da aplicação do chat",
+  "main": "index.js",
+  "author": "Gabriel Borges Martins",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server",
+    "debug": "npx nodemon --experimental-specifier-resolution=node ./src/index.js"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "knex": "^1.0.2",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.1.1",
+    "mysql": "^2.18.1",
+    "objection": "^3.0.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
