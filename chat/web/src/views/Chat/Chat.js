@@ -11,7 +11,7 @@ socket.on('connect', () =>
 const Chat = () => {
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
-  const video = 'https://www.youtube.com/embed/CsWalGO23yQ';
+  const video = 'https://www.youtube.com/embed/er2DzwmtMPY';
 
   useEffect(() => {
     const handleNewMessage = (newMessage) =>
@@ -54,8 +54,8 @@ const Chat = () => {
               {m.message === '/video' ? (
                 <iframe
                   src={m.video}
-                  width="560"
-                  height="315"
+                  width="300"
+                  height="200"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
