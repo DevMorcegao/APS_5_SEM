@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 import uuid from 'uuid/v4';
 
 const myId = uuid();
-const socket = io('http://localhost:8080');
+const socket = io('http://192.168.15.77:8080');
 socket.on('connect', () =>
   console.log('|IO| Conectado - Uma nova conexão foi estabelecida'),
 );
@@ -47,8 +47,8 @@ const Chat = () => {
             <span
               className={`${
                 m.id === myId
-                  ? 'border-2 border-solid border-brand-300 rounded-xl inline-block list-none mb-4 py-3 px-3 text-right bg-brand-500'
-                  : 'border-2 border-solid border-zinc-500 rounded-xl inline-block list-none mb-4 py-3 px-3 text-right bg-zinc-600'
+                  ? 'border-2 border-solid border-brand-300 rounded-xl inline-block list-none mb-4 py-2 px-2 text-right bg-brand-500'
+                  : 'border-2 border-solid border-zinc-500 rounded-xl inline-block list-none mb-4 py-2 px-2 text-right bg-zinc-600'
               }`}
             >
               {m.message === '/video' ? (
@@ -57,7 +57,7 @@ const Chat = () => {
                   width="560"
                   height="315"
                   title="YouTube video player"
-                  frameBorder="0"
+                  frameBorder="2"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
